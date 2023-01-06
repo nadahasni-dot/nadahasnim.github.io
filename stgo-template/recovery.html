@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <title>Spacetoon Go</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Cairo:400,700"
+      rel="stylesheet"
+    />
+
+    <style>
+      .allcontainer {
+        font-family: 'Cairo', sans-serif !important;
+      }
+      body {
+        font-family: 'Cairo', sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+      .allcontainer {
+        text-align: center;
+      }
+      .xtable {
+        width: 600px;
+      }
+      .xtable a {
+        text-decoration: none;
+      }
+      .xtable,
+      .xtable tr,
+      .xtable tr td {
+        padding: 0 !important;
+        margin: 0 auto !important;
+        border: 0 !important;
+        border-spacing: 0 !important;
+      }
+      .xheader {
+        background: url('https://spacetoongo.com/images/header.jpg');
+        background-size: 600px 193px;
+        width: 600px;
+        height: 193px;
+      }
+      .xbody {
+        width: 600px;
+        direction: rtl;
+        background: url('https://spacetoongo.com/images/rep.jpg');
+        background-size: 600px auto;
+      }
+      .xbody td > div {
+        padding: 5px 55px;
+      }
+      .xbody td > div h2,
+      .xbody td > div h4,
+      .xbody td > div h3 {
+        padding: 0;
+        margin: 0 0 20px 0;
+        text-align: center;
+        color: #af0116;
+      }
+      .xbody a {
+        color: #990000;
+        font-weight: bold;
+      }
+      .xbody td > div .xicon-img {
+        width: 154px;
+        margin: 0 auto 10px auto;
+        display: block;
+      }
+
+      .xfooter {
+        background: url('https://spacetoongo.com/assets/images/footer.jpg');
+        background-size: 600px 225px;
+        width: 600px;
+        height: 225px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="allcontainer">
+      <table class="xtable">
+        <tr class="xheader">
+          <td></td>
+        </tr>
+        <tr class="xbody">
+          <td>
+            <div>
+              <div class="xicon">
+                <img
+                  class="xicon-img"
+                  src="https://spacetoongo.com/assets/images/icon1.jpg"
+                />
+              </div>
+              <p style="font-family: 'Cairo', sans-serif !important">
+                عزيزي المشترك
+              </p>
+              <p style="font-family: 'Cairo', sans-serif !important">
+                نأسف لفقدانك كلمة المرور، لكن لا مشكلة!
+              </p>
+              <p style="font-family: 'Cairo', sans-serif !important">
+                كل ما عليك فعله هو استخدام الرمز التالي للدخول مجدداً ثم تسجيل
+                كلمة مرور جديدة:
+              </p>
+              <p style="font-family: 'Cairo', sans-serif !important">
+                {{ .Token }}
+              </p>
+              <p style="font-family: 'Cairo', sans-serif !important">
+                دمتم في رعاية الله وحفظه
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr class="xfooter">
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
